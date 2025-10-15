@@ -97,19 +97,6 @@ RUN chmod +x /bin/LANDIS_Linux/Core-Model-v8-LINUX/downloadSpecificGitCommitAndF
 
 #### SUCCESSION EXTENSIONS
 
-### Biomass-Succession Extension
-ENV BIOMASS_SUCCESSION_DEVELOPER="LANDIS-II-Foundation"
-ENV BIOMASS_SUCCESSION_COMMIT="ab749ba2e9a7b38e3d78165c1963cd28032ab710"
-RUN cd /bin/LANDIS_Linux/Core-Model-v8-LINUX \
-&& ./downloadSpecificGitCommitAndFolder.sh https://github.com/$BIOMASS_SUCCESSION_DEVELOPER/Extension-Biomass-Succession.git $BIOMASS_SUCCESSION_COMMIT /src \ 
-&& cd /bin/LANDIS_Linux/Core-Model-v8-LINUX/Extension-Biomass-Succession/src \
-&& python /bin/LANDIS_Linux/Core-Model-v8-LINUX/editing_csproj_LANDIS-II_files.py ./biomass-succession.csproj \
-&& dotnet build -c Release \
-&& wget https://raw.githubusercontent.com/$BIOMASS_SUCCESSION_DEVELOPER/Extension-Biomass-Succession/$BIOMASS_SUCCESSION_COMMIT/deploy/installer/Biomass%20Succession%207.txt \
-&& dotnet $LANDIS_EXTENSIONS_TOOL add "Biomass Succession 7.txt" \
-&& cd /bin/LANDIS_Linux/Core-Model-v8-LINUX/ \
-&& rm -r Extension-Biomass-Succession 
-
 ### PnET-Cohort Library
 ##  an updated v3 by MGarcia
 ##  the guts of the PnET-Succession Extension
