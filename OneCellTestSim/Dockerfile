@@ -118,7 +118,6 @@ RUN cd /bin/LANDIS_Linux/Core-Model-v8-LINUX \
 ### PnET-Succession Extension
 ##  an updated v6.1 by MGarcia
 ##  fully dependent on PnET-Cohort Library
-##  also requires that Biomass-Succession is already built
 ENV PNET_SUCCESSION_DEVELOPER="megarcia"
 ENV PNET_SUCCESSION_COMMIT="78d95b6954b51d023d5e6131957a0305ccf00bf6"
 # Get Extension source code
