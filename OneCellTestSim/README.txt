@@ -128,7 +128,7 @@ I work on a Mac, so I use the Terminal, which is Linux. I have Docker Desktop v4
 I also have Clément's helpful tools in the "files_to_help_compilation" directory. In the present directory, 
 to build the Docker container
 
-<path>/OneCellTestSim$ docker build -t landis-ii_v8_linux .
+<path>/OneCellTestSim$ docker build -t landis-ii_pnet-succession_linux .
 
 Once the Docker image is built successfully, you can see that it exists with
 
