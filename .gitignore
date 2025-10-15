@@ -1,2 +1,4 @@
 .DS_Store
-
+*.sln
+OneCellTestSim/files_to_help_compilation/obj/*
+OneCellTestSim/files_to_help_compilation/bin/*
